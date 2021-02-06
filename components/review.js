@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, TouchableOpacity, Image, Text, View ,TextInput} from 'react-native';
+import { StyleSheet, TouchableOpacity, Image, Text, View ,TextInput,Dimensions } from 'react-native';
 import { Rating, AirbnbRating } from 'react-native-ratings';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input, Card, Button, SocialIcon } from 'react-native-elements';
 
-
+let dimensions = Dimensions.get("window");
+    let imageHeight = Math.round((dimensions.width *9) / 23);
+    let imageWidth = dimensions.width;
 
 export default class Review extends Component {
     constructor(props) {
@@ -28,7 +30,7 @@ export default class Review extends Component {
             
                 <Image
                source={require('../assets/house.jpg')}
-               style={{width:'100%'}}
+               style={{ height: imageHeight, width: imageWidth }}
   />
 
                       <Text style={styles.header}>White House Interior </Text>
