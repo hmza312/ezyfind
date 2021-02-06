@@ -30,6 +30,9 @@ import Clicks from './components/click';
 import Review from './components/review';
 import Bussiness from './components/bussiness';
 import Special from './components/special';
+import Request from './components/request';
+import RequesItem from './components/requesitem';
+import Payment from './components/payment';
 
 class NavigationDrawerStructure extends Component {
 
@@ -70,6 +73,23 @@ const FirstActivity_StackNavigator = createStackNavigator({
   },
 });
 
+
+const Eight_StackNavigator = createStackNavigator({
+  
+  Eight: {
+    screen: Request,
+    navigationOptions: ({ navigation }) => ({
+      title: 'Bussines',
+      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#FF9800',
+        shadowOpacity: 0,
+        elevation: 0,
+      },
+      headerTintColor: '#fff',
+    }),
+  },
+});
 const six_StackNavigator = createStackNavigator({
   
   Six: {
@@ -87,6 +107,22 @@ const six_StackNavigator = createStackNavigator({
   },
 });
 
+const ten_StackNavigator = createStackNavigator({
+  
+  Six: {
+    screen: Payment,
+    navigationOptions: ({ navigation }) => ({
+      title: 'Payment',
+      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#FF9800',
+        shadowOpacity: 0,
+        elevation: 0,
+      },
+      headerTintColor: '#fff',
+    }),
+  },
+});
 
 
 const seven_StackNavigator = createStackNavigator({
@@ -173,6 +209,22 @@ const Fifth_StackNavigator = createStackNavigator({
     }),
   },
 });
+const Nine_StackNavigator = createStackNavigator({
+  
+  Nine: {
+    screen: RequesItem,
+    navigationOptions: ({ navigation }) => ({
+      title: 'Review',
+      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#FF9800',
+        shadowOpacity: 0,
+        elevation: 0,
+      },
+      headerTintColor: '#fff',
+    }),
+  },
+});
 const DrawerNavigatorExample = createDrawerNavigator({
 
   Screen1: {
@@ -228,6 +280,27 @@ const DrawerNavigatorExample = createDrawerNavigator({
     screen: seven_StackNavigator,
     navigationOptions: {
       drawerLabel: 'Special',
+    },
+  },
+  Screen8: {
+    
+    screen: Eight_StackNavigator,
+    navigationOptions: {
+      drawerLabel: 'request',
+    },
+  },
+  Screen9: {
+    
+    screen: Nine_StackNavigator,
+    navigationOptions: {
+      drawerLabel: 'requestItem',
+    },
+  },
+  Screen10: {
+    
+    screen: ten_StackNavigator,
+    navigationOptions: {
+      drawerLabel: 'Payment',
     },
   },
 });

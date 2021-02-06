@@ -65,7 +65,7 @@ export default class Signin extends Component {
                     </TouchableOpacity>
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop:"15%" }}>
-                    <View style={{ flex: 1, height: 1, backgroundColor: 'black' }} />
+                    <View style={{ flex: -0.9, height: 1, backgroundColor: 'black' }} />
                     <View>
                         <Text style={{ width: '100%', textAlign: 'center' }}>Sign Up With</Text>
                     </View>

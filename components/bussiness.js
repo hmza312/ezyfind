@@ -95,9 +95,10 @@ export default class Bussiness extends Component{
   }}
 />
  <Text style={styles.text}>Area Info</Text>
-  <DropDownPicker
+ <View      style={{marginTop:10}}>
+             <DropDownPicker
     items={[
-          {label: 'Select Category', value: 'Select Category'},
+         {label: 'Select Category', value: 'Select Category'},
         {label: 'USA', value: 'usa'},
         {label: 'UK', value: 'uk'},
         {label: 'France', value: 'france'},
@@ -109,17 +110,18 @@ export default class Bussiness extends Component{
     borderWidth:1, padding:"2%", 
         borderColor: '#c70039'}}
     itemStyle={{
-        justifyContent: 'flex-start',color:'lightgrey'
+        justifyContent: 'flex-start'
     }}
     dropDownStyle={{backgroundColor: '#fafafa',color:'purple'}}
     onChangeItem={item => this.setState({
         country: item.value
     })}
 />
-<View style={{  marginTop:'5%' }}></View>
-  <DropDownPicker
+</View>
+<View      style={{marginTop:10}}>
+             <DropDownPicker
     items={[
-          {label: 'Select Category', value: 'Select Category'},
+         {label: 'Select Category', value: 'Select Category'},
         {label: 'USA', value: 'usa'},
         {label: 'UK', value: 'uk'},
         {label: 'France', value: 'france'},
@@ -129,19 +131,20 @@ export default class Bussiness extends Component{
     style={{backgroundColor: "transparent",
     borderRadius:10,
     borderWidth:1, padding:"2%", 
-        borderColor: '#c70039',marginTop:10}}
+        borderColor: '#c70039'}}
     itemStyle={{
-        justifyContent: 'flex-start',color:'lightgrey'
+        justifyContent: 'flex-start'
     }}
     dropDownStyle={{backgroundColor: '#fafafa',color:'purple'}}
     onChangeItem={item => this.setState({
         country: item.value
     })}
 />
-<View style={{     marginTop:'5%' }}></View>
-  <DropDownPicker
+</View>             
+<View      style={{marginTop:10}}>
+             <DropDownPicker
     items={[
-          {label: 'Select Category', value: 'Select Category'},
+         {label: 'Select Category', value: 'Select Category'},
         {label: 'USA', value: 'usa'},
         {label: 'UK', value: 'uk'},
         {label: 'France', value: 'france'},
@@ -151,15 +154,16 @@ export default class Bussiness extends Component{
     style={{backgroundColor: "transparent",
     borderRadius:10,
     borderWidth:1, padding:"2%", 
-        borderColor: '#c70039',marginTop:10}}
+        borderColor: '#c70039'}}
     itemStyle={{
-        justifyContent: 'flex-start',color:'lightgrey'
+        justifyContent: 'flex-start'
     }}
     dropDownStyle={{backgroundColor: '#fafafa',color:'purple'}}
     onChangeItem={item => this.setState({
         country: item.value
     })}
 />
+</View>
  <View style={styles.checklabel}>
                     <CheckBox
                         style={styles.size}
